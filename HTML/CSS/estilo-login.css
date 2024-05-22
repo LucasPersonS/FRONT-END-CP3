@@ -245,23 +245,6 @@ button#close:hover {
     color: #fc0161;
 }
 
-.signup-link {
-    text-align: center;
-    margin-top: 1em;
-    font-size: 1em;
-}
-
-.signup-link a {
-    color: #fc016a;
-    text-decoration: none;
-    font-weight: bold;
-    transition: text-decoration 0.3s;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
-}
-
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.8);
 }
