@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     
-    userInfo.textContent = `Nome: ${userData.nome} | Email: ${userData.email} | Último login: ${userData.senha}`;
+    userInfo.textContent = `Nome: ${userData.nome} | Email: ${userData.email} | Senha: ${userData.senha}`;
 
     logoutButton.addEventListener('click', () => {
         sessionStorage.removeItem('token');
