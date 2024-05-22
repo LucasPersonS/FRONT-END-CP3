@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    }
+  
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-image: linear-gradient(#7a001b, #fc0176);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+  }
+  
+  h2 {
+      font-size: 1.5em;
+      color: #fff;
+      text-align: center;
+      margin: 10vh;
+  }
+  
+  header {
+      background-color: #fff;
+      padding: 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo img {
+      max-width: 230px;
+      height: auto;
+  }
+  
+  #login {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+      padding: 20px 50px;
+      border: none;
+      border-radius: 15px;
+      background-color: #fc014c;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 2em;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+  }
+#login i {
+    margin-right: 10px;
+}
+
+header #login:hover {
+    background-color: #ff5a99;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+main {
+    flex: 1;
+}
+
+legend {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+button#close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: #fc0161;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+button#close:hover {
+    background-color: #b5005b;
+}
+
+.sucesso, .erro {
+    font-weight: 500;
+    border: transparent;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sucesso {
+    color: #0b700b;
+    background-color: #8bea8b;
+}
+
+.erro {
+    color: #c61523;
+    background-color: #f38a8a;
+}
+
+.fa-regular {
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.form-group div {
+    margin: 1% auto;
+    width: 100%;
+}
+
+.form-group input[type=email],
+.form-group input[type=password],
+.form-group input[type=text],
+.form-group button[type=submit] {
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin: 10px 0;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type=email]:focus,
+.form-group input[type=password]:focus,
+.form-group input[type=text]:focus {
+    border-color: #fc016a;
+}
+
+.form-group button[type=submit] {
+    display: block;
+    background-color: #fc016a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group button[type=submit]:hover {
+    background-color: #b50064;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input[type="password"] {
+    padding-right: 2em;
+}
+
+.password-container .fa-eye-slash,
+.password-container .fa-eye {
+    position: absolute;
+    top: 38%;
+    right: 2em;
+    color: #999;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.password-container .fa-eye-slash:hover,
+.password-container .fa-eye:hover {
+    color: #333;
+}
+
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.custom-checkbox {
+    display: none;
+}
+
+.custom-checkbox + .remember-me-label::before {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    border: 2px solid #000;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.custom-checkbox:checked + .remember-me-label::before {
+    background-color: #fc0161;
+    border-color: #fc016a;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.remember-me-label {
+    font-size: 1em;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.remember-me-label:hover {
+    color: #fc0161;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.signup-link a {
+    color: #fc016a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+dialog {
+    position: relative;
+    margin: 3% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: auto;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .logo-footer img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer .links-footer a,
+.footer .contato-footer p {
+    font-family: "Poppins", sans-serif;
+}
+
+.footer .links-footer a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: text-decoration 0.3s;
+}
+
+.footer .links-footer a:hover {
+    text-decoration: underline;
+}
+
+header, .footer {
+    width: 100%;
+    box-sizing: border-box;
+}
