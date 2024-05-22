@@ -8,3 +8,47 @@
     <title>Login CP3</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="JS/script.js" defer></script>
+    <body>
+        <div>
+            <h2>FAÇA SEU LOGIN</h2>
+            </div>
+        </div>
+            <dialog>
+                <button id="close">Fechar</button>
+                <div>
+                    <form action="#" method="get" onsubmit="return validaCampos(this.idEmail,this.idSenha)">
+                        <fieldset>
+                            <legend>Faça seu Login</legend>
+                            <div class="form-group">
+                                <div>
+                                    <label for="idEmail">Usuário</label>
+                                    <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu usuário">
+                                </div>
+                                <div>
+                                    <label for="idSenha">Senha</label>
+                                    <div class="password-container">
+                                        <input type="password" name="txtSenha" id="idSenha" placeholder="Digite sua senha">
+                                        <i class="fa-regular fa-eye-slash" id="togglePassword"></i>
+                                    </div>
+                                    <div class="remember-me-container">
+                                        <input type="checkbox" class="custom-checkbox" name="txtLembrar" id="idLembrar" value="lembrete" checked>
+                                        <label for="idLembrar" class="remember-me-label">Lembrar-me</label>
+                                    </div>
+                                    <div>
+                                        <button type="submit">Enviar</button>
+                                    </div>
+                                    <div>
+                                        <p class="valida"></p>
+                                    </div>
+                                    <div>
+                                        <p class="signup-link">Não possui cadastro? <a href="cadastro.html">Clique aqui</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+    </body>
+</html>
