@@ -43,7 +43,7 @@ function validaCampos(input1,input2) {
            setTimeout(()=>{
                 elMsg.setAttribute("class","valida");
                 elMsg.innerText = "logado";
-                window.location.href = "/HTML/logado.html";
+                window.location.href = "index.html";
            },3000);
             return false; 
         }
